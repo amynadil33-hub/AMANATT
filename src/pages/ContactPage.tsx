@@ -27,9 +27,9 @@ const ContactPage: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <h2 className="font-serif text-2xl font-bold text-white mb-4">Get in Touch</h2>
-            <p className="text-gray-400 mb-8">Have questions about investing with Blocs? Our team is here to help.</p>
+            <p className="text-gray-400 mb-8">Have questions about investing with Amanat? Our team is here to help.</p>
             <div className="space-y-4">
-              {[['Email', 'invest@blocs.mv'], ['Phone', '+960 332 0000'], ['Address', 'Malé, Republic of Maldives'], ['Hours', 'Sunday–Thursday, 9AM–5PM MVT']].map(([k, v]) => (
+              {[['Email', 'invest@amanat.mv'], ['Phone', '+960 332 0000'], ['Address', 'Malé, Republic of Maldives'], ['Hours', 'Sunday–Thursday, 9AM–5PM MVT']].map(([k, v]) => (
                 <div key={k}><p className="text-xs text-gray-500 uppercase tracking-wider">{k}</p><p className="text-sm text-white mt-1">{v}</p></div>
               ))}
             </div>

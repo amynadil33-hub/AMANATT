@@ -5,7 +5,7 @@ const podcastEpisodes = [
   { ep: 24, title: 'The Future of Sukuk in Indian Ocean Markets', duration: '48 min', date: '8 April 2026', season: 3, desc: 'CEO Yusuf Al-Hamdan discusses the growing sukuk market with AAOIFI\'s Secretary-General and the head of Islamic capital markets at Maldives Stock Exchange.' },
   { ep: 23, title: 'Maldives Resort Real Estate: A Deep Dive into Valuations', duration: '52 min', date: '25 March 2026', season: 3, desc: 'JLL\'s Head of Maldives Hospitality Valuations discusses the drivers of resort asset appreciation and what investors should look for in due diligence.' },
   { ep: 22, title: 'Shariah Compliance in Practice: A Conversation with our Shariah Board', duration: '44 min', date: '10 March 2026', season: 3, desc: 'Dr. Ahmed Rasheed sits down with two members of Al-Baraka\'s Shariah Supervisory Board to discuss how structures are reviewed and certified.' },
-  { ep: 21, title: 'Building Generational Wealth: Islamic Finance for Families', duration: '39 min', date: '24 February 2026', season: 3, desc: 'How Maldivian families can use Blocs and Musharakah structures to build and preserve inter-generational wealth in compliance with Islamic inheritance law.' },
+  { ep: 21, title: 'Building Generational Wealth: Islamic Finance for Families', duration: '39 min', date: '24 February 2026', season: 3, desc: 'How Maldivian families can use Amanat and Musharakah structures to build and preserve inter-generational wealth in compliance with Islamic inheritance law.' },
   { ep: 20, title: 'Fractional Real Estate: Global Trends and the Maldives Opportunity', duration: '56 min', date: '7 February 2026', season: 3, desc: 'A comparative study of fractional real estate platforms in Dubai, Malaysia, and the Maldives — what\'s working, what isn\'t, and where the opportunity lies.' },
 ];
 
@@ -40,7 +40,7 @@ const ResourcesPage: React.FC = () => {
               { title: 'Podcast', desc: 'Islamic finance, Maldivian real estate, and investment strategy.', href: '/resources/podcast' },
               { title: 'Expert Interviews', desc: 'In-depth conversations with industry leaders and scholars.', href: '/resources/interviews' },
               { title: 'Case Studies', desc: 'Detailed analysis of completed projects and returns.', href: '/resources/case-studies' },
-              { title: 'FAQ', desc: 'Answers to common questions about Blocs and investing.', href: '/faq' },
+              { title: 'FAQ', desc: 'Answers to common questions about Amanat and investing.', href: '/faq' },
             ].map(r => (
               <Link key={r.title} to={r.href} className="card-premium p-6 group">
                 <h3 className="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold transition-colors">{r.title}</h3>
@@ -60,11 +60,11 @@ const ResourcesPage: React.FC = () => {
         <section className="py-16 lg:py-20 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="section-label mb-4">RESOURCES</p>
-            <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white">Blocs <span className="italic text-gold">Podcast</span></h1>
+            <h1 className="font-serif text-4xl lg:text-6xl font-bold text-white">Amanat <span className="italic text-gold">Podcast</span></h1>
           </div>
         </section>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <p className="text-gray-400 leading-relaxed mb-8">The Blocs Podcast explores Islamic finance, Maldivian real estate, and investment strategy. New episodes every two weeks. Available on Spotify, Apple Podcasts, and YouTube.</p>
+          <p className="text-gray-400 leading-relaxed mb-8">The Amanat Podcast explores Islamic finance, Maldivian real estate, and investment strategy. New episodes every two weeks. Available on Spotify, Apple Podcasts, and YouTube.</p>
           <div className="space-y-4">
             {podcastEpisodes.map(ep => (
               <div key={ep.ep} className="card-premium p-5 flex items-center gap-5">

@@ -12,14 +12,14 @@ const MembershipPage: React.FC = () => {
   const [flipped, setFlipped] = useState(false);
   const [displayName, setDisplayName] = useState(profile?.full_name || 'INVESTOR');
   const tier = profile?.membership_tier || 'Silver';
-  const memberNumber = `BLOCS •••• •••• ${String(profile?.id || '0000').slice(-4).toUpperCase()}`;
+  const memberNumber = `AMANAT •••• •••• ${String(profile?.id || '0000').slice(-4).toUpperCase()}`;
   const joinYear = profile?.created_at ? new Date(profile.created_at).getFullYear() : new Date().getFullYear();
 
   return (
     <div>
       <p className="section-label mb-2">INVESTOR MEMBERSHIP</p>
       <h1 className="font-serif text-3xl font-bold text-white mb-1">Your <span className="text-gold">Membership Card</span></h1>
-      <p className="text-gray-400 mb-8">Your Blocs membership card grants access to the platform, identifies your investor tier, and serves as proof of your Shariah-certified investment status.</p>
+      <p className="text-gray-400 mb-8">Your Amanat membership card grants access to the platform, identifies your investor tier, and serves as proof of your Shariah-certified investment status.</p>
 
       <div className="grid lg:grid-cols-2 gap-8">
         {/* Card */}
@@ -30,7 +30,7 @@ const MembershipPage: React.FC = () => {
               {!flipped ? (
                 <div className="absolute inset-0 rounded-2xl p-6 flex flex-col justify-between" style={{ background: 'linear-gradient(135deg, #0F1629 0%, #1A2340 50%, #0F1629 100%)', border: '1px solid rgba(201,169,97,0.2)' }}>
                   <div className="flex items-center justify-between">
-                    <span className="font-serif text-xl font-bold text-white italic">Blocs</span>
+                    <span className="font-serif text-xl font-bold text-white italic">Amanat</span>
                     <div className="flex items-center gap-2">
                       <span className="text-[10px] text-gold tracking-wider">SHARIAH CERTIFIED</span>
                       <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-gold/20 text-gold">{tier.toUpperCase()}</span>
@@ -54,7 +54,7 @@ const MembershipPage: React.FC = () => {
                   <div>
                     <p className="text-[10px] text-gray-500 mb-1">INVESTOR ID</p>
                     <p className="text-xs text-gray-300 font-mono">{profile?.id || 'N/A'}</p>
-                    <p className="text-[10px] text-gray-500 mt-3 leading-relaxed">This card certifies the holder as a verified investor on the Blocs platform. All investments are Shariah-certified under AAOIFI standards.</p>
+                    <p className="text-[10px] text-gray-500 mt-3 leading-relaxed">This card certifies the holder as a verified investor on the Amanat platform. All investments are Shariah-certified under AAOIFI standards.</p>
                   </div>
                 </div>
               )}

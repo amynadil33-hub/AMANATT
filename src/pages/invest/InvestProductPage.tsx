@@ -4,9 +4,9 @@ import { useParams, Link } from 'react-router-dom';
 const products: Record<string, { label: string; title: string; titleGold: string; intro: string; features: { t: string; d: string }[]; cta: string }> = {
   'real-estate': {
     label: 'INVESTMENT PRODUCT', title: 'Introduction to', titleGold: 'Real Estate', cta: 'Browse Projects',
-    intro: 'Blocs enables qualified investors to own fractional stakes in premium Maldivian real estate developments. Each project is independently valued, legally structured through SPVs, and certified under AAOIFI Shariah standards.',
+    intro: 'Amanat enables qualified investors to own fractional stakes in premium Maldivian real estate developments. Each project is independently valued, legally structured through SPVs, and certified under AAOIFI Shariah standards.',
     features: [
-      { t: 'Fractional Ownership', d: 'Own a fixed-value stake in premium real estate. Each Bloc represents proportional ownership in the underlying asset.' },
+      { t: 'Fractional Ownership', d: 'Own a fixed-value stake in premium real estate. Each Amanat represents proportional ownership in the underlying asset.' },
       { t: 'Shariah Structure', d: 'All investments structured as Musharakah (partnership) or Ijarah (lease). No interest charged or received.' },
       { t: 'Asset-Backed Returns', d: 'Returns generated from rental income and asset appreciation — secured against real property.' },
     ]
@@ -22,7 +22,7 @@ const products: Record<string, { label: string; title: string; titleGold: string
   },
   'private-credit': {
     label: 'INVESTMENT PRODUCT', title: 'Private', titleGold: 'Credit Fund', cta: 'Apply to Invest',
-    intro: 'The Blocs Private Credit Fund provides Murabaha and Ijarah financing to institutional real estate developers across the Maldives. Investors earn fixed profit-share returns secured against first-charge property assets.',
+    intro: 'The Amanat Private Credit Fund provides Murabaha and Ijarah financing to institutional real estate developers across the Maldives. Investors earn fixed profit-share returns secured against first-charge property assets.',
     features: [
       { t: 'Murabaha Structure', d: 'The fund purchases assets on behalf of borrowers and re-sells at a disclosed profit margin. Compliant with AAOIFI FAS 28. No interest charged or received.' },
       { t: 'First-Charge Security', d: 'All credit facilities are secured by first-ranking mortgages over Maldivian real estate assets, providing robust downside protection.' },
@@ -31,11 +31,11 @@ const products: Record<string, { label: string; title: string; titleGold: string
   },
   'bonds-sukuks': {
     label: 'INVESTMENT PRODUCT', title: 'Bonds &', titleGold: 'Sukuks', cta: 'Subscribe to Sukuk',
-    intro: 'Blocs issues AAOIFI-certified Sukuk Al-Ijarah backed by income-generating Maldivian real assets — a Shariah-compliant alternative to conventional bonds.',
+    intro: 'Amanat issues AAOIFI-certified Sukuk Al-Ijarah backed by income-generating Maldivian real assets — a Shariah-compliant alternative to conventional bonds.',
     features: [
       { t: 'Sukuk Al-Ijarah', d: 'Each sukuk represents undivided proportional ownership in a lease asset. Investors receive lease rental income as their return — not interest.' },
       { t: 'AAOIFI Certified', d: 'All sukuk structures are reviewed and certified under AAOIFI Standard 17. Independent Shariah audit conducted annually by Al-Baraka SSB.' },
-      { t: 'Secondary Market Q4 2026', d: 'Blocs sukuk are structured for secondary market trading on the Maldives Capital Market secondary platform launching Q4 2026.' },
+      { t: 'Secondary Market Q4 2026', d: 'Amanat sukuk are structured for secondary market trading on the Maldives Capital Market secondary platform launching Q4 2026.' },
     ]
   },
 };

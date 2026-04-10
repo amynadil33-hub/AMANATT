@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1 mb-4 lg:mb-0">
-            <Link to="/" className="font-serif text-2xl font-bold text-white italic">Blocs</Link>
+            <Link to="/" className="font-serif text-2xl font-bold text-white italic">Amanat</Link>
             <p className="text-sm text-gray-400 mt-3 leading-relaxed max-w-xs">
               Premium fractional ownership across the Maldives atolls. Asset-backed, Shariah-certified.
             </p>
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
         <div className="rounded-xl p-5 mb-8" style={{ backgroundColor: 'rgba(201,169,97,0.06)', borderLeft: '3px solid #C9A961' }}>
           <p className="text-xs text-gray-400 leading-relaxed">
             <span className="text-gold font-semibold">Risk Disclaimer:</span> All investments carry risk. Past performance is not indicative of future results. 
-            The value of investments and income from them may go down as well as up. Capital is not guaranteed. Blocs investments are 
+            The value of investments and income from them may go down as well as up. Capital is not guaranteed. Amanat investments are 
             illiquid and suitable only for qualified investors who can bear the economic risk of a complete loss. All investment structures 
             are Shariah-certified under AAOIFI standards and regulated by the Maldives Capital Market Authority (CMDA).
           </p>
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-6 border-t" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
           <p className="text-xs text-gray-500 mb-3 md:mb-0">
-            &copy; {new Date().getFullYear()} Blocs Investment Platform. All rights reserved. Developed by Musalhu Advertising.
+            &copy; {new Date().getFullYear()} Amanat Investment Platform. All rights reserved. Developed by Musalhu Advertising.
           </p>
           <div className="flex items-center gap-4">
             <Link to="/about/risk-disclosures" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</Link>

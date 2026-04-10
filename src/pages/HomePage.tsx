@@ -11,7 +11,7 @@ const trustMetrics = [
 
 const steps = [
   { num: '01', title: 'Browse Projects', desc: 'Explore certified real estate projects across all Maldivian atolls — from Malé to Addu. Every project carries Shariah certification.' },
-  { num: '02', title: 'Select Blocs', desc: 'Choose your investment units. Each Bloc is a fixed-value ownership stake — from $250,000 to $10M per unit.' },
+  { num: '02', title: 'Select Amanat', desc: 'Choose your investment units. Each Amanat is a fixed-value ownership stake — from $250,000 to $10M per unit.' },
   { num: '03', title: 'Complete KYC', desc: 'Full identity and accreditation verification. Secure, fast, and compliant with Maldives Capital Market regulations.' },
   { num: '04', title: 'Receive Profit Share', desc: 'Your share of rental income and asset gains, distributed quarterly or semi-annually — never riba, always halal.' },
 ];
@@ -33,10 +33,10 @@ const whyInvest = [
 ];
 
 const faqPreview = [
-  { q: 'What is Blocs and how does it work?', a: 'Blocs is a Shariah-compliant fractional real estate investment platform based in the Maldives. We enable qualified investors to own fractional stakes in premium real estate projects across Maldivian atolls.' },
-  { q: 'What is the minimum investment amount?', a: 'Minimum investment varies by project, typically ranging from $250,000 to $2,000,000 per Bloc. Each project listing clearly states the minimum investment requirement.' },
+  { q: 'What is Amanat and how does it work?', a: 'Amanat is a Shariah-compliant fractional real estate investment platform based in the Maldives. We enable qualified investors to own fractional stakes in premium real estate projects across Maldivian atolls.' },
+  { q: 'What is the minimum investment amount?', a: 'Minimum investment varies by project, typically ranging from $250,000 to $2,000,000 per Amanat. Each project listing clearly states the minimum investment requirement.' },
   { q: 'How are returns distributed?', a: 'Returns are distributed quarterly or semi-annually depending on the project structure. Distributions include rental income and asset appreciation gains, structured as profit-share — never interest.' },
-  { q: 'Is Blocs regulated?', a: 'Yes. Blocs operates under the regulatory framework of the Maldives Capital Market Authority (CMDA) and all investment structures are certified by an independent Shariah Supervisory Board under AAOIFI standards.' },
+  { q: 'Is Amanat regulated?', a: 'Yes. Amanat operates under the regulatory framework of the Maldives Capital Market Authority (CMDA) and all investment structures are certified by an independent Shariah Supervisory Board under AAOIFI standards.' },
 ];
 
 const HomePage: React.FC = () => {
@@ -137,7 +137,7 @@ const HomePage: React.FC = () => {
                   <p className="text-sm text-gray-400 mb-4">{p.location} · {p.category}</p>
                   <div className="grid grid-cols-2 gap-4 mb-4">
                     <div>
-                      <p className="text-xs text-gray-500 uppercase tracking-wider">Bloc Size</p>
+                      <p className="text-xs text-gray-500 uppercase tracking-wider">Amanat Size</p>
                       <p className="text-sm font-semibold text-white">${(p.minimum_investment || 0).toLocaleString()}</p>
                     </div>
                     <div>
@@ -200,7 +200,7 @@ const HomePage: React.FC = () => {
       {/* Why Invest */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: '#0B1121' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="section-label mb-4">WHY BLOCS</p>
+          <p className="section-label mb-4">WHY AMANAT</p>
           <h2 className="font-serif text-3xl lg:text-5xl font-bold text-white mb-12">
             Why Invest <span className="italic text-gold">With Us</span>
           </h2>
@@ -220,12 +220,12 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="section-label mb-4">ABOUT BLOCS</p>
+              <p className="section-label mb-4">ABOUT AMANAT</p>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-6">
                 Institutional-Grade <span className="italic text-gold">Real Estate</span> Investment
               </h2>
               <p className="text-gray-400 leading-relaxed mb-4">
-                Blocs is the Maldives' premier Shariah-compliant fractional real estate investment platform. We bridge the gap between institutional-quality property assets and qualified individual investors.
+                Amanat is the Maldives' premier Shariah-compliant fractional real estate investment platform. We bridge the gap between institutional-quality property assets and qualified individual investors.
               </p>
               <p className="text-gray-400 leading-relaxed mb-8">
                 Founded with a mission to democratize access to premium Maldivian real estate, we combine rigorous due diligence, regulatory compliance, and transparent governance to deliver consistent, halal returns.
@@ -267,7 +267,7 @@ const HomePage: React.FC = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link to="/resources/podcast" className="card-premium p-6 group">
               <p className="text-xs text-gold font-semibold uppercase tracking-wider mb-3">Podcast</p>
-              <h3 className="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold transition-colors">The Blocs Podcast</h3>
+              <h3 className="font-serif text-xl font-bold text-white mb-2 group-hover:text-gold transition-colors">The Amanat Podcast</h3>
               <p className="text-sm text-gray-400 leading-relaxed">Islamic finance, Maldivian real estate, and investment strategy. New episodes every two weeks.</p>
             </Link>
             <Link to="/resources/interviews" className="card-premium p-6 group">

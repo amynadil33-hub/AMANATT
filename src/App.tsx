@@ -106,7 +106,7 @@ class ErrorBoundary extends React.Component<
 
 const App = () => (
   <ErrorBoundary>
-    <ThemeProvider defaultTheme="dark" storageKey="blocs-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="amanat-theme">
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <Toaster />

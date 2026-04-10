@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
   useEffect(() => { setMobileOpen(false); setActiveDropdown(null); }, [location.pathname]);
 
   const investNowItems = [
-    { label: 'Introduction to Real Estate', desc: 'Foundations, Shariah structures & how Blocs works', href: '/invest/real-estate' },
+    { label: 'Introduction to Real Estate', desc: 'Foundations, Shariah structures & how Amanat works', href: '/invest/real-estate' },
     { label: 'Vacation Rentals', desc: 'Maldives resort & villa income pools — high-yield tourism assets', href: '/invest/vacation-rentals' },
     { label: 'Private Credit Fund', desc: 'Murabaha financing for institutional real estate projects', href: '/invest/private-credit' },
     { label: 'Bonds & Sukuks', desc: 'AAOIFI-certified sukuk backed by Maldivian real assets', href: '/invest/bonds-sukuks' },
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="font-serif text-2xl font-bold text-white italic">Blocs</span>
+            <span className="font-serif text-2xl font-bold text-white italic">Amanat</span>
           </Link>
 
           {/* Desktop Nav */}

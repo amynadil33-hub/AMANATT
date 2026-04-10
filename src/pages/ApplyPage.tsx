@@ -41,7 +41,7 @@ const ApplyPage: React.FC = () => {
           </div>
         ) : (
           <div className="card-premium p-8">
-            <p className="text-gray-400 mb-6">Complete the form below to express your interest in investing with Blocs. Our team will contact you to discuss opportunities and next steps.</p>
+            <p className="text-gray-400 mb-6">Complete the form below to express your interest in investing with Amanat. Our team will contact you to discuss opportunities and next steps.</p>
             <form onSubmit={handleSubmit} className="space-y-5">
               {error && <div className="p-3 rounded-lg bg-red-500/10 text-sm text-red-400">{error}</div>}
               <div><label className="text-xs text-gray-400 uppercase tracking-wider mb-2 block">Full Name <span className="text-red-400">*</span></label><input type="text" value={form.full_name} onChange={e => setForm({ ...form, full_name: e.target.value })} required className="input-dark" /></div>

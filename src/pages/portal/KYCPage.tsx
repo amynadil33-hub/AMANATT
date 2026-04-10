@@ -156,7 +156,7 @@ const KYCPage: React.FC = () => {
       case 5: return (
         <div className="space-y-5">
           <p className="text-sm text-gray-400">Final confirmations required before your KYC submission is processed.</p>
-          {['I confirm all documents submitted are genuine, valid, and unaltered originals or certified true copies.', 'I understand that providing false information is a criminal offence under Maldivian law.', 'I consent to Blocs conducting background checks, including PEP screening and sanctions list checks.', 'I agree that Blocs may request additional documents at any time as part of ongoing due diligence.', 'I have read and understood the Blocs KYC Policy, AML/CTF Policy, and Privacy Notice.'].map((text, i) => (
+          {['I confirm all documents submitted are genuine, valid, and unaltered originals or certified true copies.', 'I understand that providing false information is a criminal offence under Maldivian law.', 'I consent to Amanat conducting background checks, including PEP screening and sanctions list checks.', 'I agree that Amanat may request additional documents at any time as part of ongoing due diligence.', 'I have read and understood the Amanat KYC Policy, AML/CTF Policy, and Privacy Notice.'].map((text, i) => (
             <label key={i} className="flex items-start gap-3 p-3 rounded-lg bg-white/5 cursor-pointer">
               <input type="checkbox" checked={declarations[i]} onChange={() => { const d = [...declarations]; d[i] = !d[i]; setDeclarations(d); }} className="rounded border-gray-600 mt-0.5 accent-[#C9A961]" />
               <span className="text-sm text-gray-300">{text}</span>

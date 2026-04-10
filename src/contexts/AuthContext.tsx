@@ -32,7 +32,7 @@ const DEMO_INVESTOR_PROFILE: Profile = {
   id: 'demo-investor-001',
   auth_user_id: 'demo-investor-auth-001',
   full_name: 'Ahmed Rasheed',
-  email: 'investor@blocs.mv',
+  email: 'investor@amanat.mv',
   phone: '+960 7771234',
   role: 'customer',
   membership_tier: 'Gold',
@@ -43,7 +43,7 @@ const DEMO_ADMIN_PROFILE: Profile = {
   id: 'demo-admin-001',
   auth_user_id: 'demo-admin-auth-001',
   full_name: 'Ibrahim Waheed',
-  email: 'admin@blocs.mv',
+  email: 'admin@amanat.mv',
   phone: '+960 7775678',
   role: 'admin',
   membership_tier: 'Platinum',
@@ -51,8 +51,8 @@ const DEMO_ADMIN_PROFILE: Profile = {
 };
 
 const DEMO_CREDENTIALS = {
-  investor: { email: 'investor@blocs.mv', password: 'investor123' },
-  admin: { email: 'admin@blocs.mv', password: 'admin123' },
+  investor: { email: 'investor@amanat.mv', password: 'investor123' },
+  admin: { email: 'admin@amanat.mv', password: 'admin123' },
 };
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -74,7 +74,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Check for persisted demo session on mount
   useEffect(() => {
-    const demoRole = localStorage.getItem('blocs-demo-role');
+    const demoRole = localStorage.getItem('amanat-demo-role');
     if (demoRole === 'customer') {
       setProfile(DEMO_INVESTOR_PROFILE);
       setUser({ id: DEMO_INVESTOR_PROFILE.auth_user_id, email: DEMO_INVESTOR_PROFILE.email } as User);
@@ -168,14 +168,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setProfile(DEMO_INVESTOR_PROFILE);
       setUser({ id: DEMO_INVESTOR_PROFILE.auth_user_id, email: DEMO_INVESTOR_PROFILE.email } as User);
       setIsDemo(true);
-      localStorage.setItem('blocs-demo-role', 'customer');
+      localStorage.setItem('amanat-demo-role', 'customer');
       return { error: null };
     }
     if (email === DEMO_CREDENTIALS.admin.email && password === DEMO_CREDENTIALS.admin.password) {
       setProfile(DEMO_ADMIN_PROFILE);
       setUser({ id: DEMO_ADMIN_PROFILE.auth_user_id, email: DEMO_ADMIN_PROFILE.email } as User);
       setIsDemo(true);
-      localStorage.setItem('blocs-demo-role', 'admin');
+      localStorage.setItem('amanat-demo-role', 'admin');
       return { error: null };
     }
 
@@ -194,7 +194,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setSession(null);
       setProfile(null);
       setIsDemo(false);
-      localStorage.removeItem('blocs-demo-role');
+      localStorage.removeItem('amanat-demo-role');
       return;
     }
     try {
