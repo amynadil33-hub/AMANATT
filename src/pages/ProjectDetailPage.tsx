@@ -126,7 +126,7 @@ const ProjectDetailPage: React.FC = () => {
             <div className="card-premium p-6 lg:sticky lg:top-24">
               <h3 className="font-serif text-lg font-bold text-white mb-4">Invest in This Project</h3>
               <div className="mb-4">
-                <label className="text-xs text-gray-400 uppercase tracking-wider mb-2 block">Number of Blocs</label>
+                <label className="text-xs text-gray-400 uppercase tracking-wider mb-2 block">Number of Amanat</label>
                 <div className="flex items-center gap-3">
                   <button onClick={() => setInvestAmount(Math.max(1, investAmount - 1))} className="w-10 h-10 rounded-lg border border-gray-700 text-white hover:border-gold transition-colors flex items-center justify-center">-</button>
                   <span className="font-serif text-2xl font-bold text-white flex-1 text-center">{investAmount}</span>

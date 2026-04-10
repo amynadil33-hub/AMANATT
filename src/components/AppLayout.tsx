@@ -11,7 +11,7 @@ const trustMetrics = [
 
 const steps = [
   { num: '01', title: 'Browse Projects', desc: 'Explore certified real estate projects across all Maldivian atolls — from Malé to Addu. Every project carries Shariah certification.' },
-  { num: '02', title: 'Select Blocs', desc: 'Choose your investment units. Each Bloc is a fixed-value ownership stake — from $250,000 to $10M per unit.' },
+  { num: '02', title: 'Select Amanat', desc: 'Choose your investment units. Each Amanat is a fixed-value ownership stake — from $250,000 to $10M per unit.' },
   { num: '03', title: 'Complete KYC', desc: 'Full identity and accreditation verification. Secure, fast, and compliant with Maldives Capital Market regulations.' },
   { num: '04', title: 'Receive Profit Share', desc: 'Your share of rental income and asset gains, distributed quarterly or semi-annually — never riba, always halal.' },
 ];
@@ -33,10 +33,10 @@ const whyInvest = [
 ];
 
 const faqData = [
-  { q: 'What is Blocs and how does it work?', a: 'Blocs is a Shariah-compliant fractional real estate investment platform based in the Maldives. We enable qualified investors to own fractional stakes in premium real estate projects across Maldivian atolls.' },
-  { q: 'What is the minimum investment amount?', a: 'Minimum investment varies by project, typically ranging from $250,000 to $2,000,000 per Bloc. Each project listing clearly states the minimum investment requirement.' },
+  { q: 'What is Amanat and how does it work?', a: 'Amanat is a Shariah-compliant fractional real estate investment platform based in the Maldives. We enable qualified investors to own fractional stakes in premium real estate projects across Maldivian atolls.' },
+  { q: 'What is the minimum investment amount?', a: 'Minimum investment varies by project, typically ranging from $250,000 to $2,000,000 per Amanat. Each project listing clearly states the minimum investment requirement.' },
   { q: 'How are returns distributed?', a: 'Returns are distributed quarterly or semi-annually depending on the project structure. Distributions include rental income and asset appreciation gains, structured as profit-share — never interest.' },
-  { q: 'Is Blocs regulated?', a: 'Yes. Blocs operates under the regulatory framework of the Maldives Capital Market Authority (CMDA) and all investment structures are certified by an independent Shariah Supervisory Board under AAOIFI standards.' },
+  { q: 'Is Amanat regulated?', a: 'Yes. Amanat operates under the regulatory framework of the Maldives Capital Market Authority (CMDA) and all investment structures are certified by an independent Shariah Supervisory Board under AAOIFI standards.' },
 ];
 
 const AppLayout: React.FC = () => {
@@ -60,7 +60,7 @@ const AppLayout: React.FC = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b" style={{ backgroundColor: '#0B1121', borderColor: 'rgba(255,255,255,0.06)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <span className="font-serif text-2xl font-bold text-white italic cursor-pointer" onClick={() => navigate('/')}>Blocs</span>
+            <span className="font-serif text-2xl font-bold text-white italic cursor-pointer" onClick={() => navigate('/')}>Amanat</span>
             <div className="hidden lg:flex items-center space-x-1">
               <Link to="/" className="px-3 py-2 text-sm text-gray-300 hover:text-white transition-colors">Home</Link>
               <Link to="/projects" className="px-3 py-2 text-sm text-gray-300 hover:text-white transition-colors">Projects</Link>
@@ -150,7 +150,7 @@ const AppLayout: React.FC = () => {
                     <h3 className="font-serif text-xl font-bold text-white mb-1">{p.title}</h3>
                     <p className="text-sm text-gray-400 mb-4">{p.location} · {p.category}</p>
                     <div className="grid grid-cols-2 gap-4 mb-4">
-                      <div><p className="text-xs text-gray-500 uppercase tracking-wider">Bloc Size</p><p className="text-sm font-semibold text-white">${(p.minimum_investment || 0).toLocaleString()}</p></div>
+                      <div><p className="text-xs text-gray-500 uppercase tracking-wider">Amanat Size</p><p className="text-sm font-semibold text-white">${(p.minimum_investment || 0).toLocaleString()}</p></div>
                       <div><p className="text-xs text-gray-500 uppercase tracking-wider">Total Value</p><p className="text-sm font-semibold text-white">${(p.funding_goal || 0).toLocaleString()}</p></div>
                       <div><p className="text-xs text-gray-500 uppercase tracking-wider">Expected Return</p><p className="text-sm font-semibold text-gold">{p.expected_return}% p.a.</p></div>
                       <div><p className="text-xs text-gray-500 uppercase tracking-wider">Profit Share</p><p className="text-sm font-semibold text-white">{p.profit_share}</p></div>
@@ -195,7 +195,7 @@ const AppLayout: React.FC = () => {
         {/* Why Invest */}
         <section className="py-20 lg:py-28" style={{ backgroundColor: '#0B1121' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="section-label mb-4">WHY BLOCS</p>
+            <p className="section-label mb-4">WHY AMANAT</p>
             <h2 className="font-serif text-3xl lg:text-5xl font-bold text-white mb-12">Why Invest <span className="italic text-gold">With Us</span></h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {whyInvest.map((w) => (
@@ -213,9 +213,9 @@ const AppLayout: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="section-label mb-4">ABOUT BLOCS</p>
+                <p className="section-label mb-4">ABOUT AMANAT</p>
                 <h2 className="font-serif text-3xl lg:text-4xl font-bold text-white mb-6">Institutional-Grade <span className="italic text-gold">Real Estate</span> Investment</h2>
-                <p className="text-gray-400 leading-relaxed mb-4">Blocs is the Maldives' premier Shariah-compliant fractional real estate investment platform. We bridge the gap between institutional-quality property assets and qualified individual investors.</p>
+                <p className="text-gray-400 leading-relaxed mb-4">Amanat is the Maldives' premier Shariah-compliant fractional real estate investment platform. We bridge the gap between institutional-quality property assets and qualified individual investors.</p>
                 <p className="text-gray-400 leading-relaxed mb-8">Founded with a mission to democratize access to premium Maldivian real estate, we combine rigorous due diligence, regulatory compliance, and transparent governance to deliver consistent, halal returns.</p>
                 <div className="flex flex-wrap gap-3">
                   <Link to="/about/who-we-are" className="btn-outline-gold">Who We Are</Link>
@@ -271,7 +271,7 @@ const AppLayout: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
             <div className="col-span-2 md:col-span-4 lg:col-span-1">
-              <span className="font-serif text-2xl font-bold text-white italic">Blocs</span>
+              <span className="font-serif text-2xl font-bold text-white italic">Amanat</span>
               <p className="text-sm text-gray-400 mt-3 leading-relaxed max-w-xs">Premium fractional ownership across the Maldives atolls. Asset-backed, Shariah-certified.</p>
             </div>
             <div>
@@ -312,10 +312,10 @@ const AppLayout: React.FC = () => {
             </div>
           </div>
           <div className="rounded-xl p-5 mb-8" style={{ backgroundColor: 'rgba(201,169,97,0.06)', borderLeft: '3px solid #C9A961' }}>
-            <p className="text-xs text-gray-400 leading-relaxed"><span className="text-gold font-semibold">Risk Disclaimer:</span> All investments carry risk. Past performance is not indicative of future results. Capital is not guaranteed. Blocs investments are illiquid and suitable only for qualified investors. All structures are Shariah-certified under AAOIFI standards and regulated by the Maldives Capital Market Authority (CMDA).</p>
+            <p className="text-xs text-gray-400 leading-relaxed"><span className="text-gold font-semibold">Risk Disclaimer:</span> All investments carry risk. Past performance is not indicative of future results. Capital is not guaranteed. Amanat investments are illiquid and suitable only for qualified investors. All structures are Shariah-certified under AAOIFI standards and regulated by the Maldives Capital Market Authority (CMDA).</p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between pt-6 border-t" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
-            <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Blocs Investment Platform. All rights reserved. Developed by Musalhu Advertising.</p>
+            <p className="text-xs text-gray-500">&copy; {new Date().getFullYear()} Amanat Investment Platform. All rights reserved. Developed by Musalhu Advertising.</p>
             <div className="flex items-center gap-4 mt-3 md:mt-0">
               <Link to="/about/risk-disclosures" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">Privacy Policy</Link>
               <Link to="/about/risk-disclosures" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">Terms of Service</Link>

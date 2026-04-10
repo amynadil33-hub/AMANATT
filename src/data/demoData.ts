@@ -167,25 +167,25 @@ export const demoPortfolioEntries = [
 export const demoNotifications = [
   { id: 'notif-001', user_id: 'demo-investor-001', title: 'Q1 2025 Returns Distributed', body: 'Your quarterly profit share of $30,250 has been credited to your account.', read_status: false, created_at: '2025-01-02T10:00:00Z' },
   { id: 'notif-002', user_id: 'demo-investor-001', title: 'Baa Atoll Villas — Construction Update', body: 'Phase 2 construction is 78% complete. On track for Q3 2025 handover.', read_status: false, created_at: '2024-12-15T10:00:00Z' },
-  { id: 'notif-003', user_id: 'demo-investor-001', title: 'New Project Available', body: 'Hulhumalé Phase III Office Park is now open for investment. Minimum bloc: $750,000.', read_status: true, created_at: '2025-01-20T10:00:00Z' },
+  { id: 'notif-003', user_id: 'demo-investor-001', title: 'New Project Available', body: 'Hulhumalé Phase III Office Park is now open for investment. Minimum Amanat: $750,000.', read_status: true, created_at: '2025-01-20T10:00:00Z' },
   { id: 'notif-004', user_id: 'demo-investor-001', title: 'KYC Approved', body: 'Your KYC verification has been approved. You now have full investment access.', read_status: true, created_at: '2024-03-16T10:00:00Z' },
   { id: 'notif-005', user_id: 'demo-investor-001', title: 'Annual Tax Statement Ready', body: 'Your 2024 annual tax statement is now available in the Documents section.', read_status: true, created_at: '2025-02-01T10:00:00Z' },
 ];
 
 // Admin demo data
 export const demoUsers = [
-  { id: 'demo-investor-001', auth_user_id: 'demo-investor-auth-001', full_name: 'Ahmed Rasheed', email: 'investor@blocs.mv', phone: '+960 7771234', role: 'customer', membership_tier: 'Gold', created_at: '2024-03-15T10:00:00Z' },
+  { id: 'demo-investor-001', auth_user_id: 'demo-investor-auth-001', full_name: 'Ahmed Rasheed', email: 'investor@amanat.mv', phone: '+960 7771234', role: 'customer', membership_tier: 'Gold', created_at: '2024-03-15T10:00:00Z' },
   { id: 'user-002', auth_user_id: 'auth-002', full_name: 'Fathimath Zahra', email: 'fathimath@example.com', phone: '+960 7772345', role: 'customer', membership_tier: 'Platinum', created_at: '2023-08-20T10:00:00Z' },
   { id: 'user-003', auth_user_id: 'auth-003', full_name: 'Mohamed Ali', email: 'mohamed.ali@example.com', phone: '+960 7773456', role: 'customer', membership_tier: 'Silver', created_at: '2024-11-01T10:00:00Z' },
   { id: 'user-004', auth_user_id: 'auth-004', full_name: 'Aishath Noor', email: 'aishath@example.com', phone: '+960 7774567', role: 'customer', membership_tier: 'Gold', created_at: '2024-05-10T10:00:00Z' },
   { id: 'user-005', auth_user_id: 'auth-005', full_name: 'Hassan Ibrahim', email: 'hassan@example.com', phone: '+960 7775678', role: 'customer', membership_tier: 'Silver', created_at: '2025-01-05T10:00:00Z' },
-  { id: 'demo-admin-001', auth_user_id: 'demo-admin-auth-001', full_name: 'Ibrahim Waheed', email: 'admin@blocs.mv', phone: '+960 7775678', role: 'admin', membership_tier: 'Platinum', created_at: '2023-01-10T10:00:00Z' },
+  { id: 'demo-admin-001', auth_user_id: 'demo-admin-auth-001', full_name: 'Ibrahim Waheed', email: 'admin@amanat.mv', phone: '+960 7775678', role: 'admin', membership_tier: 'Platinum', created_at: '2023-01-10T10:00:00Z' },
   { id: 'user-007', auth_user_id: 'auth-007', full_name: 'Mariyam Didi', email: 'mariyam@example.com', phone: '+960 7776789', role: 'customer', membership_tier: 'Gold', created_at: '2024-09-15T10:00:00Z' },
   { id: 'user-008', auth_user_id: 'auth-008', full_name: 'Abdulla Shareef', email: 'abdulla@example.com', phone: '+960 7777890', role: 'customer', membership_tier: 'Silver', created_at: '2024-12-20T10:00:00Z' },
 ];
 
 export const demoKycSubmissions = [
-  { id: 'kyc-001', user_id: 'demo-investor-001', status: 'approved', submitted_at: '2024-03-15T12:00:00Z', reviewed_at: '2024-03-16T10:00:00Z', created_at: '2024-03-15T10:00:00Z', profiles: { full_name: 'Ahmed Rasheed', email: 'investor@blocs.mv' } },
+  { id: 'kyc-001', user_id: 'demo-investor-001', status: 'approved', submitted_at: '2024-03-15T12:00:00Z', reviewed_at: '2024-03-16T10:00:00Z', created_at: '2024-03-15T10:00:00Z', profiles: { full_name: 'Ahmed Rasheed', email: 'investor@amanat.mv' } },
   { id: 'kyc-002', user_id: 'user-002', status: 'approved', submitted_at: '2023-08-21T10:00:00Z', reviewed_at: '2023-08-22T10:00:00Z', created_at: '2023-08-20T10:00:00Z', profiles: { full_name: 'Fathimath Zahra', email: 'fathimath@example.com' } },
   { id: 'kyc-003', user_id: 'user-003', status: 'submitted', submitted_at: '2024-11-05T10:00:00Z', reviewed_at: null, created_at: '2024-11-01T10:00:00Z', profiles: { full_name: 'Mohamed Ali', email: 'mohamed.ali@example.com' } },
   { id: 'kyc-004', user_id: 'user-005', status: 'under_review', submitted_at: '2025-01-08T10:00:00Z', reviewed_at: null, created_at: '2025-01-05T10:00:00Z', profiles: { full_name: 'Hassan Ibrahim', email: 'hassan@example.com' } },
@@ -194,7 +194,7 @@ export const demoKycSubmissions = [
 
 export const demoContactSubmissions = [
   { id: 'contact-001', full_name: 'James Wilson', email: 'james@example.com', subject: 'Investment Inquiry', message: 'I am interested in learning more about your Baa Atoll project. What is the minimum investment?', created_at: '2025-03-01T10:00:00Z' },
-  { id: 'contact-002', full_name: 'Sarah Chen', email: 'sarah@example.com', subject: 'Partnership Opportunity', message: 'We are a Dubai-based family office looking to explore partnership opportunities with Blocs.', created_at: '2025-02-20T10:00:00Z' },
+  { id: 'contact-002', full_name: 'Sarah Chen', email: 'sarah@example.com', subject: 'Partnership Opportunity', message: 'We are a Dubai-based family office looking to explore partnership opportunities with Amanat.', created_at: '2025-02-20T10:00:00Z' },
   { id: 'contact-003', full_name: 'Ali Raza', email: 'ali.raza@example.com', subject: 'Shariah Compliance', message: 'Can you provide details about your Shariah certification process and which scholars are on your board?', created_at: '2025-02-15T10:00:00Z' },
 ];
 

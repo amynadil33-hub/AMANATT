@@ -52,7 +52,7 @@ const LoginPage: React.FC = () => {
       <div className="w-full max-w-lg px-4">
         {/* Header */}
         <div className="text-center mb-8">
-          <Link to="/" className="font-serif text-3xl font-bold text-white italic">Blocs</Link>
+          <Link to="/" className="font-serif text-3xl font-bold text-white italic">Amanat</Link>
           <p className="text-gray-400 mt-2">Sign in to access your account</p>
         </div>
 
@@ -122,7 +122,7 @@ const LoginPage: React.FC = () => {
                 onChange={e => setEmail(e.target.value)}
                 required
                 className="input-dark"
-                placeholder={loginType === 'investor' ? 'investor@example.com' : 'admin@blocs.mv'}
+                placeholder={loginType === 'investor' ? 'investor@example.com' : 'admin@amanat.mv'}
               />
             </div>
 

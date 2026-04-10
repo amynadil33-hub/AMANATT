@@ -301,8 +301,8 @@ export const AdminSettings: React.FC = () => (
       <div className="card-premium p-6">
         <h3 className="font-serif text-lg font-bold text-white mb-4">Platform Settings</h3>
         <div className="space-y-4">
-          <div><label className="text-xs text-gray-400 uppercase tracking-wider mb-2 block">Platform Name</label><input type="text" defaultValue="Blocs" className="input-dark" /></div>
-          <div><label className="text-xs text-gray-400 uppercase tracking-wider mb-2 block">Support Email</label><input type="email" defaultValue="invest@blocs.mv" className="input-dark" /></div>
+          <div><label className="text-xs text-gray-400 uppercase tracking-wider mb-2 block">Platform Name</label><input type="text" defaultValue="Amanat" className="input-dark" /></div>
+          <div><label className="text-xs text-gray-400 uppercase tracking-wider mb-2 block">Support Email</label><input type="email" defaultValue="invest@amanat.mv" className="input-dark" /></div>
           <button className="btn-gold !text-xs">Save Settings</button>
         </div>
       </div>

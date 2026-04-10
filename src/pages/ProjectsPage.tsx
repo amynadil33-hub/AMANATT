@@ -104,7 +104,7 @@ const ProjectsPage: React.FC = () => {
                       <p className="text-sm text-gray-400 mb-4">{p.location} · {p.category}</p>
                       <div className="grid grid-cols-2 gap-4 mb-4">
                         <div>
-                          <p className="text-xs text-gray-500 uppercase tracking-wider">Bloc Size</p>
+                          <p className="text-xs text-gray-500 uppercase tracking-wider">Amanat Size</p>
                           <p className="text-sm font-semibold text-white">${(p.minimum_investment || 0).toLocaleString()}</p>
                         </div>
                         <div>

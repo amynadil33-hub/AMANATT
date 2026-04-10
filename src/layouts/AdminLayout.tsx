@@ -44,7 +44,7 @@ const AdminLayout: React.FC = () => {
       <aside className={`fixed lg:static inset-y-0 left-0 z-50 w-64 border-r transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`} style={{ backgroundColor: '#080D1A', borderColor: 'rgba(255,255,255,0.06)' }}>
         <div className="flex flex-col h-full">
           <div className="p-5 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
-            <Link to="/" className="font-serif text-xl font-bold text-white italic">Blocs</Link>
+            <Link to="/" className="font-serif text-xl font-bold text-white italic">Amanat</Link>
             <p className="text-xs text-red-400 mt-1 font-semibold">Admin Dashboard {isDemo && <span className="text-gold">(Demo)</span>}</p>
           </div>
           <nav className="flex-1 overflow-y-auto py-4 px-3">

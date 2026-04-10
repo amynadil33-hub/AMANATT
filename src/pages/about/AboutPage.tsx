@@ -6,8 +6,8 @@ const pages: Record<string, { label: string; title: string; titleGold: string; b
     label: 'COMPANY', title: 'Who We', titleGold: 'Are', breadcrumb: 'Who We Are',
     content: (
       <div className="space-y-8">
-        <p className="text-gray-400 leading-relaxed text-lg">Blocs is the Maldives' premier Shariah-compliant fractional real estate investment platform. Founded in 2019, we bridge the gap between institutional-quality property assets and qualified individual investors seeking halal, asset-backed returns.</p>
-        <p className="text-gray-400 leading-relaxed">Our platform enables investors to acquire fractional ownership stakes — called "Blocs" — in premium real estate developments across the Maldivian atolls. Every project is independently valued, legally structured through Special Purpose Vehicles, and certified under AAOIFI Shariah standards.</p>
+        <p className="text-gray-400 leading-relaxed text-lg">Amanat is the Maldives' premier Shariah-compliant fractional real estate investment platform. Founded in 2019, we bridge the gap between institutional-quality property assets and qualified individual investors seeking halal, asset-backed returns.</p>
+        <p className="text-gray-400 leading-relaxed">Our platform enables investors to acquire fractional ownership stakes — called "Amanat" — in premium real estate developments across the Maldivian atolls. Every project is independently valued, legally structured through Special Purpose Vehicles, and certified under AAOIFI Shariah standards.</p>
         <div className="grid sm:grid-cols-3 gap-6 mt-10">
           {[{ v: '2019', l: 'Year Founded' }, { v: 'Malé', l: 'Headquarters' }, { v: '45+', l: 'Team Members' }].map(s => (
             <div key={s.l} className="card-premium p-5 text-center"><p className="font-serif text-3xl font-bold text-gold">{s.v}</p><p className="text-xs text-gray-400 mt-1">{s.l}</p></div>
@@ -73,7 +73,7 @@ const pages: Record<string, { label: string; title: string; titleGold: string; b
         <div className="card-premium p-6">
           <h3 className="font-serif text-xl font-bold text-white mb-4">Company Details</h3>
           <div className="space-y-3">
-            {[['Legal Name', 'Blocs Investment Holdings Pvt Ltd'], ['Registration', 'C-0892/2019 (Maldives)'], ['Regulator', 'Maldives Capital Market Authority (CMDA)'], ['Shariah Board', 'Al-Baraka Shariah Supervisory Board'], ['Auditor', 'Deloitte Maldives'], ['Headquarters', 'Malé, Republic of Maldives']].map(([k, v]) => (
+            {[['Legal Name', 'Amanat Investment Holdings Pvt Ltd'], ['Registration', 'C-0892/2019 (Maldives)'], ['Regulator', 'Maldives Capital Market Authority (CMDA)'], ['Shariah Board', 'Al-Baraka Shariah Supervisory Board'], ['Auditor', 'Deloitte Maldives'], ['Headquarters', 'Malé, Republic of Maldives']].map(([k, v]) => (
               <div key={k} className="flex justify-between py-2 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
                 <span className="text-sm text-gray-400">{k}</span><span className="text-sm text-white">{v}</span>
               </div>
@@ -98,7 +98,7 @@ const pages: Record<string, { label: string; title: string; titleGold: string; b
     label: 'INVESTOR RELATIONS', title: 'Our', titleGold: 'Investors', breadcrumb: 'Our Investors',
     content: (
       <div className="space-y-10">
-        <p className="text-gray-400 leading-relaxed text-lg">Blocs serves 318 verified investors across 24 countries — from Maldivian nationals to international family offices and GCC institutional investors.</p>
+        <p className="text-gray-400 leading-relaxed text-lg">Amanat serves 318 verified investors across 24 countries — from Maldivian nationals to international family offices and GCC institutional investors.</p>
         <div className="grid sm:grid-cols-3 gap-6">
           {[{ t: 'Individual HNWIs', d: 'High-net-worth individuals seeking Shariah-compliant passive income and real estate exposure. Minimum $250,000.' }, { t: 'Family Offices', d: 'Multi-generational wealth management vehicles seeking diversified, long-term Islamic real estate exposure. Typical: $2M–$20M.' }, { t: 'Institutional Investors', d: 'Islamic banks, takaful companies, and sovereign wealth funds allocating to Shariah-compliant alternative real estate.' }].map(c => (
             <div key={c.t} className="card-premium p-6">
@@ -183,7 +183,7 @@ const pages: Record<string, { label: string; title: string; titleGold: string; b
         </div>
         {[
           { t: 'Market Risk', d: 'Real estate values can fluctuate due to economic conditions, interest rates, and market sentiment. The Maldivian property market may be affected by tourism cycles, climate events, and regulatory changes.' },
-          { t: 'Liquidity Risk', d: 'Blocs investments are illiquid. There is currently no secondary market for fractional ownership units. Investors should be prepared to hold investments for the full stated duration.' },
+          { t: 'Liquidity Risk', d: 'Amanat investments are illiquid. There is currently no secondary market for fractional ownership units. Investors should be prepared to hold investments for the full stated duration.' },
           { t: 'Capital Risk', d: 'Capital is not guaranteed. Investors may lose some or all of their invested capital. Past performance is not indicative of future results.' },
           { t: 'Currency Risk', d: 'Investments are denominated in USD. Investors whose base currency is not USD may be exposed to exchange rate fluctuations.' },
           { t: 'Regulatory Risk', d: 'Changes in Maldivian law, tax regulations, or capital market rules could affect investment returns or the ability to operate the platform.' },
@@ -201,12 +201,12 @@ const pages: Record<string, { label: string; title: string; titleGold: string; b
     label: 'COMPANY', title: 'Press &', titleGold: 'Media', breadcrumb: 'Press & Media',
     content: (
       <div className="space-y-6">
-        <p className="text-gray-400 leading-relaxed">Latest news, press releases, and media coverage about Blocs and the Maldivian real estate investment market.</p>
+        <p className="text-gray-400 leading-relaxed">Latest news, press releases, and media coverage about Amanat and the Maldivian real estate investment market.</p>
         {[
-          { date: 'March 2026', title: 'Blocs Announces $15M Ari Atoll Resort Development', desc: 'New luxury resort project opens for investment with projected 10.2% annual returns.' },
-          { date: 'January 2026', title: 'Blocs Surpasses $84M in Assets Under Management', desc: 'Platform milestone reflects growing investor confidence in Shariah-compliant real estate.' },
-          { date: 'November 2025', title: 'CMDA Approves Blocs Secondary Market Framework', desc: 'Regulatory approval paves the way for secondary trading of fractional ownership units in Q4 2026.' },
-          { date: 'September 2025', title: 'Blocs Partners with Al-Baraka for Enhanced Shariah Oversight', desc: 'New partnership strengthens independent Shariah governance and certification processes.' },
+          { date: 'March 2026', title: 'Amanat Announces $15M Ari Atoll Resort Development', desc: 'New luxury resort project opens for investment with projected 10.2% annual returns.' },
+          { date: 'January 2026', title: 'Amanat Surpasses $84M in Assets Under Management', desc: 'Platform milestone reflects growing investor confidence in Shariah-compliant real estate.' },
+          { date: 'November 2025', title: 'CMDA Approves Amanat Secondary Market Framework', desc: 'Regulatory approval paves the way for secondary trading of fractional ownership units in Q4 2026.' },
+          { date: 'September 2025', title: 'Amanat Partners with Al-Baraka for Enhanced Shariah Oversight', desc: 'New partnership strengthens independent Shariah governance and certification processes.' },
         ].map((n, i) => (
           <div key={i} className="card-premium p-6">
             <p className="text-xs text-gold mb-2">{n.date}</p>

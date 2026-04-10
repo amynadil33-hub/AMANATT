@@ -23,7 +23,7 @@ const ThemeContext = createContext<ThemeContextType>(initialState)
 export function ThemeProvider({
   children,
   defaultTheme = "dark",
-  storageKey = "blocs-theme",
+  storageKey = "amanat-theme",
 }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(() => {
     try {
