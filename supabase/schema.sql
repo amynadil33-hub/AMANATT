@@ -38,6 +38,52 @@ create table if not exists public.faq_items (
   created_at timestamptz default now()
 );
 
+
+create table if not exists public.resource_items (
+  id uuid primary key default gen_random_uuid(),
+  type text not null check (type in ('podcast', 'interview', 'case_study')),
+  title text not null,
+  slug text unique,
+  summary text,
+  content text,
+  image_url text,
+  publish_status text not null default 'draft' check (publish_status in ('draft', 'published', 'archived')),
+  featured boolean default false,
+  author text,
+  category text,
+  duration text,
+  video_url text,
+  audio_url text,
+  returns_text text,
+  period_text text,
+  date_text text,
+  season int,
+  episode_number int,
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);
+
+create index if not exists resource_items_published_type_created_idx
+  on public.resource_items (type, publish_status, created_at desc);
+
+create index if not exists resource_items_podcast_episode_idx
+  on public.resource_items (type, publish_status, episode_number desc, created_at desc)
+  where type = 'podcast';
+
+create or replace function public.set_updated_at()
+returns trigger as $$
+begin
+  new.updated_at = now();
+  return new;
+end;
+$$ language plpgsql;
+
+drop trigger if exists set_resource_items_updated_at on public.resource_items;
+create trigger set_resource_items_updated_at
+  before update on public.resource_items
+  for each row
+  execute function public.set_updated_at();
+
 create table if not exists public.investments (
   id uuid primary key default gen_random_uuid(),
   user_id uuid not null references public.profiles(id) on delete cascade,
@@ -147,8 +193,10 @@ alter table public.projects enable row level security;
 alter table public.faq_items enable row level security;
 alter table public.contact_submissions enable row level security;
 alter table public.investment_applications enable row level security;
+alter table public.resource_items enable row level security;
 
 create policy "public read projects" on public.projects for select using (true);
 create policy "public read faq" on public.faq_items for select using (true);
+create policy "public read published resources" on public.resource_items for select using (publish_status = 'published');
 create policy "public insert contact" on public.contact_submissions for insert with check (true);
 create policy "public insert applications" on public.investment_applications for insert with check (true);
